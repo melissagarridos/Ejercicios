@@ -89,8 +89,20 @@ total_premium = premium * precio_premium
 
 total_familiar = familiar * precio_familiar
 
+
+if total_basico > total_familiar and total_basico > total_premium:
+    print("El plan básico es el más vendido")
+
+elif total_familiar > total_basico and total_familiar > total_premium:
+    print("El plan familiar es el más vendido")
+
+
+elif total_premium > total_basico and total_premium > total_familiar:
+    print("El plan premium es el más vendido")
+
 print("El total recaudado en el plan básico es $", total_basico, " por un total de ", basico, " personas.")
 
 print("El total recaudado en el plan premium es $", total_premium, " por un total de ", premium, " personas.")
 
 print("El total recaudado en el plan familiar es $", total_familiar, " por un total de ", familiar, " personas.")
+
